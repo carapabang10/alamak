@@ -28,9 +28,9 @@ end
 local MODE = "atomic"
 local base_dir = "/storage/emulated/0/Delta/Workspace/Chloe X/Chloe_X_"
 
-local config_url          = "https://raw.githubusercontent.com/nelayanbuntal/resona/refs/heads/main/setisle"
-local back_config_url     = "https://raw.githubusercontent.com/nelayanbuntal/resona/refs/heads/main/setisle"
-local extra_config_url    = "https://raw.githubusercontent.com/nelayanbuntal/resona/refs/heads/main/setisle"
+local config_url          = "https://raw.githubusercontent.com/carapabang10/alamak/refs/heads/main/setisle"
+local back_config_url     = "https://raw.githubusercontent.com/carapabang10/alamak/refs/heads/main/setisle"
+local extra_config_url    = "https://raw.githubusercontent.com/carapabang10/alamak/refs/heads/main/setisle"
 
 -- Path dan nama file config diubah sesuai permintaan
 local save_dir        = base_dir
@@ -55,9 +55,9 @@ local position_file    = position_dir .. "/Position.json"
 -- GAME TABLE
 local games = {
     [121864768012064] = "https://raw.githubusercontent.com/MajestySkie/Chloe-X/refs/heads/main/Games/FishIt.lua",
-    [123921593837160] = "https://raw.githubusercontent.com/nelayanbuntal/nelayan/refs/heads/main/chx/Chloe-X-main/Games/Climb And Jump.lua",
-    [108343567000516] = "https://raw.githubusercontent.com/nelayanbuntal/nelayan/refs/heads/main/chx/Chloe-X-main/Games/Climb And Jump Lego.lua",
-    [129827112113663] = "https://raw.githubusercontent.com/nelayanbuntal/nelayan/refs/heads/main/chx/Chloe-X-main/Games/Prscpt.lua",
+    [123921593837160] = "https://raw.githubusercontent.com/carapabang10/nelayan/refs/heads/main/nelayan-main/chx/Chloe-X-main/Games/Climb%20And%20Jump.lua",
+    [108343567000516] = "https://raw.githubusercontent.com/carapabang10/nelayan/refs/heads/main/nelayan-main/chx/Chloe-X-main/Games/Climb%20And%20Jump%20Lego.lua",
+    [129827112113663] = "https://raw.githubusercontent.com/carapabang10/nelayan/refs/heads/main/nelayan-main/chx/Chloe-X-main/Games/Prscpt.lua",
 }
 
 -- ============================================================
@@ -284,7 +284,7 @@ local function main()
     ---------------------------------------------------------
     safe_print("[Chloe-X] Loading FPSBoost...")
 
-    local fpsRaw = http_get("https://raw.githubusercontent.com/nelayanbuntal/resona/refs/heads/main/fpsboost")
+    local fpsRaw = http_get("https://raw.githubusercontent.com/carapabang10/alamak/refs/heads/main/fpsboost")
     if fpsRaw then
         local ok, fpsModule = pcall(loadstring(fpsRaw))
         if ok and fpsModule and fpsModule.Enable then
